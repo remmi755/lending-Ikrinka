@@ -2,6 +2,13 @@
 p {
   margin: 0;
 }
+
+a:not([href]):not([tabindex]) {
+  color: white;
+  /*text-decoration: none;*/
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "SF Pro Text";
   src: url("assets/fonts/SFProText-Regular.ttf");
@@ -24,7 +31,7 @@ p {
   margin: 0 auto;
 }
 
-.container-header {
+.container-nav {
   width: 1296px;
   height: 53px;
   flex-shrink: 0;
@@ -52,16 +59,17 @@ p {
 
 .header-logo {
   margin-top: 18px;
+  color: #fff;
 }
 
 .header-navbar {
   margin-top: 19px;
   display: flex;
   justify-content: space-between;
-  width: 588px;
+  width: 642px;
   height: 22px;
   flex-shrink: 0;
-  margin-left: 60px;
+  margin-left: 28px;
   padding-right: 26px;
 }
 
@@ -71,17 +79,28 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  text-decoration: none;
+}
+
+.header-text a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header-navbar-item {
   text-align: right;
   text-decoration: none;
+  list-style-type: none;
   font-size: 18px;
 }
 
 .active-navbar {
   color: #ef5f21;
   text-decoration: underline;
+}
+
+.active-navbar a{
+  color: #ef5f21;
 }
 
 .header-tel {
